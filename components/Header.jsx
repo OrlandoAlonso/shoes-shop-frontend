@@ -85,12 +85,10 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full hover:bg-primary/[0.05] flex justify-center items-center cursor-pointer">
-                        <div className="w-[30px] h-[30px] flex justify-center items-center relative">
-                            <BsCart className="text-[25px] md:text-[30px]" />
-                            <div className="text-[8px] md:text-[10px] h-4 w-4 flex items-center justify-center absolute top-cartTop left-cartLeft z-10">
-                                20
-                            </div>
+                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-primary/[0.05] cursor-pointer relative">
+                        <BsCart className="text-[25px] md:text-[30px]" />
+                        <div className="h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-error absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
+                            10
                         </div>
                     </div>
                 </div>
