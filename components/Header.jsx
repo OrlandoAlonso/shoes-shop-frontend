@@ -42,7 +42,7 @@ const Header = () => {
             className={`w-full h-[50px] md:h-20 bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 ${show}`}
         >
             <Wrapper className="h-[60px] flex items-center justify-between">
-                <div className="w-8 md:w-12 h-8 md:h-12 rounded-full hover:bg-primary/[0.05] flex md:hidden justify-center items-center cursor-pointer -mr-2">
+                <div className="w-8 md:w-12 h-8 md:h-12 rounded-full hover:bg-primary/[0.05] flex md:hidden justify-center items-center cursor-pointer -mr-2 menuHam">
                     {mobileMenu ? (
                         <VscChromeClose
                             className="text-lg"
@@ -85,12 +85,14 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-primary/[0.05] cursor-pointer relative">
-                        <BsCart className="text-[25px] md:text-[30px]" />
-                        <div className="h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-error absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
-                            10
+                    <Link href={"/cart"}>
+                        <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-primary/[0.05] cursor-pointer relative">
+                            <BsCart className="text-[25px] md:text-[30px]" />
+                            <div className="h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-error absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
+                                10
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </Wrapper>
         </header>

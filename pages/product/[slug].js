@@ -61,6 +61,7 @@ const ProductDetails = () => {
                             <div className='border border-shadowbox rounded-md text-center py-3 font-medium cursor-not-allowed bg-primary/[0.1] opacity-50'>14</div>
                             <div className='border border-shadowbox rounded-md text-center py-3 font-medium cursor-not-allowed bg-primary/[0.1] opacity-50'>15</div>
                         </div>
+                        
                         <div className='text-error mt-1'>
                             Es necesario seleccionar la talla
                         </div>
@@ -99,7 +100,7 @@ const ProductDetails = () => {
             <RelatedProducts />
         </Wrapper>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetails
+export default ProductDetails;
