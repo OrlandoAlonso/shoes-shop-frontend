@@ -3,7 +3,7 @@ import React from 'react';
 //import icons
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const CartItem = () => {
+const CartItem = ({ src, name, subtitle, price }) => {
   return (
     <div className='flex py-9 gap-3 md:gap-5 border-b'>
         {/* Image */}

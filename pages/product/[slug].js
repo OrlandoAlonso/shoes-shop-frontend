@@ -2,7 +2,10 @@ import React from 'react';
 import Wrapper from '@/components/Wrapper';
 import ProductDetailsCarousel from '@/components/ProductDetailsCarousel';
 import RelatedProducts from '@/components/RelatedProducts';
+import Cart from '../cart';
 import { IoMdHeartEmpty } from "react-icons/io";
+
+let name, price;
 
 const ProductDetails = () => {
   return (
@@ -19,7 +22,7 @@ const ProductDetails = () => {
                 <div className='flex-[1] py-3'>
                     {/* product title */}
                     <div className='text-[24px] 4xl:text-[34px] font-semibold mb-2'>
-                        Marca/Modelo del zapato
+                        Air Jordan 1 Mid SE Craft
                     </div>
                     {/* product title end */}
 
@@ -62,9 +65,9 @@ const ProductDetails = () => {
                             <div className='border border-shadowbox rounded-md text-center py-3 font-medium cursor-not-allowed bg-primary/[0.1] opacity-50'>15</div>
                         </div>
                         
-                        <div className='text-error mt-1'>
+                        {/* <div className='text-error mt-1'>
                             Es necesario seleccionar la talla
-                        </div>
+                        </div> */}
                     </div>
                     {/* size range end */}
 
@@ -104,3 +107,8 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
+export const datos = (nombre, precio) => {
+    name = nombre;
+    price = precio;
+}
